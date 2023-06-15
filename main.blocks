@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="kaNw_[5yV]pM5k7OZAd(">strip</variable><variable type="RadioMessage" id="yLF2FpRr7FSZ7V9A+#4$">0message1</variable></variables><block type="pxt-on-start" id="SmEQ[7.hT25zg{9/^g+S" x="0" y="0"><statement name="HANDLER"><block type="device_set_servo_pin" id="R?R?P/Nhnl%4YJjTCf3b"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="bX9dMD/t,*K`sef8)Rpe"><mutation min="0" max="180" label="Value" precision="0"></mutation><field name="SLIDER">10</field></shadow></value><next><block type="variables_set" id="[{#;9opWN),j}lqs9e%}"><field name="VAR" id="kaNw_[5yV]pM5k7OZAd(">strip</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="neopixel_create" id="O-_:-t}_azI`;pW/w[oK"><field name="pin">DigitalPin.P1</field><field name="mode">NeoPixelMode.RGB</field><value name="numleds"><shadow type="math_number" id="mr/T}B~PwiXnnbWBli4v"><field name="NUM">10</field></shadow></value></block></value><next><block type="device_show_leds" id="kzo+A}O2-)GP[vU4D7;="><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . #
+        `</field><next><block type="device_show_leds" id="nu3hcenXdGRyo;k^rweQ"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . . . . 
+        . # . # . 
+        # . . . #
+        `</field><next><block type="device_show_leds" id="ojZn@GaOrKmZkjP0Yl/#"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field><next><block type="device_clear_display" id="/MuSiU8)3x!(/KdNs7dz"></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="GWP}o5kgFJl!D9YA0:Ft" x="-470" y="723"><statement name="HANDLER"><block type="controls_if" id="r#s#^4g?b=xYuP(OREVM"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="deviceisgesture" id="o58.i)FFaz%`t4*LVKCm"><field name="gesture">Gesture.Shake</field></block></value><statement name="DO0"><block type="device_show_leds" id="9yf|b5`WN#1WH!AW9#4U"><field name="LEDS">`
+        # . . . # 
+        . # . # . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field><next><block type="radioBroadcastMessage" id="?3;#UCM@}b{Q|[6J7jj|"><value name="msg"><shadow type="radioMessageCode" id="E[;5(GLna$#(x!x25BX3"><field name="MEMBER">message1</field></shadow></value><next><block type="device_set_servo_pin" id="%$Ns5t5xQGDjoMbz5G+;"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id="xq~zo:4|jy_vxOzoR7k^"><mutation min="0" max="180" label="Value" precision="0"></mutation><field name="SLIDER">90</field></shadow></value><next><block type="neopixel_set_strip_color" id="Wm+U]k;Xc/5{m[W^X?_%"><value name="strip"><block type="variables_get" id="#79!I8m5v5f]/0*+:BzM"><field name="VAR" id="kaNw_[5yV]pM5k7OZAd(">strip</field></block></value><value name="rgb"><shadow type="neopixel_colors" id="}k-p}$FiPGOFfa-A0Wr`"><field name="color">NeoPixelColors.Red</field></shadow></value><next><block type="playMelody" id="S{=C+%4N@},CYz.Ia%|a"><value name="melody"><shadow type="melody_editor" id="$M.=WHII3AGZose:lpgu"><field name="melody">"C5 - C5 - C5 - C5 - "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="f!2dwJ+~*=uf*8l)cIn3"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">200</field></shadow></value></block></next></block></next></block></next></block></next></block></statement><statement name="ELSE"><block type="neopixel_set_strip_color" id="/$*@4MO}m:.)#Fkig:Ar"><value name="strip"><block type="variables_get" id="P@U)`iH;xnhV|ELc_V$?"><field name="VAR" id="kaNw_[5yV]pM5k7OZAd(">strip</field></block></value><value name="rgb"><shadow type="neopixel_colors" id="=tGhU9?+d7)Z2VLqGW+Y"><field name="color">NeoPixelColors.Green</field></shadow></value><next><block type="device_clear_display" id="V:#7!T;EFsX`|Hjww:Hi"><next><block type="device_set_servo_pin" id="ZewRKzKT~Yh-/QvvJ?i^"><field name="name">AnalogPin.P0</field><value name="value"><shadow type="math_number_minmax" id=".1yJ,`:iTi-cCHEgL~?#"><mutation min="0" max="180" label="Value" precision="0"></mutation><field name="SLIDER">10</field></shadow></value></block></next></block></next></block></statement></block></statement></block><block type="device_while" id="1DnnX/Jh2}k:FH%]bywl" disabled="true" x="-247" y="1125"><value name="COND"><shadow type="logic_boolean"><field name="BOOL">FALSE</field></shadow><block type="logic_negate" id="rMfUe{jV#an^LZYq^k_C" disabled="true"></block></value></block></xml>
